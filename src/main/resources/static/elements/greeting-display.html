@@ -1,0 +1,44 @@
+
+<!-- Just basic base element -->
+<link rel="import" href="../js/bower_components/polymer/webcomponents-lite.js"></link>
+<link rel="import" href="../js/bower_components/polymer/polymer.html"></link>
+
+<dom-module id="greeting-display" noscript>
+<template>
+<div>
+  <h1>Greeting</h1>
+  <p>The ID is </p>
+  <p>The Content is </p>
+</div>
+</template>
+
+<script>
+
+Polymer({
+	
+	properties : {greeting:{
+		
+	}},
+
+	
+	
+	created: function() {
+		
+		this.greeting = {
+				
+			id:"123",
+			content:"default"
+				
+		};
+		
+		
+	}
+	
+	
+});
+
+
+
+</script>
+
+</polymer-element>
